@@ -2,7 +2,6 @@ from __future__ import annotations
 from pathlib import Path
 import pandas as pd
 
-
 def load_and_merge_data(continuous_csv: str | Path, forecast_csv: str | Path) -> pd.DataFrame:
     """Load the raw demand/weather data and merge the pre-dispatch forecast."""
     continuous_path = Path(continuous_csv)
